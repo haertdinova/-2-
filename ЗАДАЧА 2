@@ -1,0 +1,21 @@
+import os
+
+os.mkdir("C:\\Users\\Home\\Desktop\\project_gutenberg_books")
+
+book1 = open("5.txt", "r", encoding="utf8")
+
+s1 = book1.readline()
+s2 = book1.readline()
+s3 = book1.readline()
+s4 = book1.readline()
+s5 = book1.readline()
+s6 = book1.readline()
+s7 = book1.readline()
+s8 = book1.readline()
+s9 = book1.readline()
+s10 = book1.readline()
+line = [s1, s2, s3, s4, s5, s6, s7, s8, s9, s10]
+a = ("\n".join(line))
+cnt = a.count("project gutenberg")
+if cnt == 10:
+    os.replace("C:\\Users\\Home\\Desktop\\Books\\5.txt", "C:\\Users\\Home\\Desktop\\project_gutenberg_books\\a2.txt")
